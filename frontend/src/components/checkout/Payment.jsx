@@ -6,6 +6,8 @@ import { clearUserCart } from "../../features/cart/cartSlice";
 import { useNavigate } from "react-router";
 import { message } from "antd";
 import axios from "axios";
+import { BACKEND_BASE_URL } from "../../utils/helper";
+
 
 const PAYSTACK_KEY = import.meta.env.VITE_PAYSTACK_TEST_KEY;
 
@@ -38,7 +40,7 @@ const Payment = ({ checkOutFormData }) => {
 
         // send data to backend server route
         const response = await axios.post(
-          "http://localhost:3000/api/v1/order/create",
+          `${BACKEND_BASE_URL}/order/create`,
           {
             reference,
             checkOutFormData,
