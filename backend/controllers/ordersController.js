@@ -42,4 +42,29 @@ const createUserOrder = async (req, res) => {
   }
 };
 
-export { createUserOrder };
+const getAllOrders = async (req, res) => {
+  try {
+    const orders = await OrderModel.find();
+
+    res.status(200).json({ message: "successful", data: orders });
+  } catch (error) {
+    res.status(400).json({ message: "failed", data: error });
+  }
+};
+
+const getSingleOrderInfo = async (req, res) => {
+  const { orderId } = req.params;
+  if (!orderId) {
+    return res
+      .status(400)
+      .json({ message: "sorry provide order Id", data: null });
+  }
+
+  try {
+    const order = await OrderModel.findOne({ _id: orderId });
+    res.status(200).json({ message: "Successful", data: order });
+  } catch (error) {
+    res.status(400).json({ message: "Sorry an error occurred", data: error });
+  }
+};
+export { createUserOrder, getAllOrders, getSingleOrderInfo };

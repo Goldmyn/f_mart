@@ -22,8 +22,8 @@ const orderSchema = new mongoose.Schema(
       type: String,
       enum: {
         values: ["Pending", "Cancelled", "Completed"],
-        default: "Pending",
       },
+      default: "Pending",
     },
   },
   { timestamps: true }
