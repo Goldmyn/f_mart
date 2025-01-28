@@ -1,6 +1,7 @@
 import "dotenv/config";
 import express from "express";
 import cors from "cors";
+import authRoutes from "./routes/authRoutes.js"
 import ordersRoute from "./routes/ordersRoute.js";
 import mongoose from "mongoose";
 
@@ -21,6 +22,7 @@ app.use(
 app.use(express.json());
 
 app.use("/api/v1/order", ordersRoute);
+app.use("/api/v1/auth", authRoutes)
 
 app.get("/server-health", (req, res) => {
   res.status(200).json({ message: "System is running successfully" });

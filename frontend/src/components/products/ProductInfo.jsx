@@ -18,7 +18,7 @@ const ProductInfo = () => {
   const [singleProduct, setSingleProduct] = useState(null);
   const dispatch = useDispatch();
   const { cartItems } = useSelector((state) => state.cart);
-
+  const { loginUser } = useSelector((state) => state.user);
   const [messageApi, contextHolder] = message.useMessage();
 
   function findProduct() {
@@ -98,6 +98,9 @@ const ProductInfo = () => {
             <ShoppingCartIcon />
           </NavLink>
           <button
+            disabled={
+              loginUser && loginUser.userType === "admin" ? true : false
+            }
             onClick={handleAddCartItem}
             className="bg-green-700 items-center px-4 flex justify-between w-full py-2 text-lg font-semibold text-white mt-4 rounded-md border-2 border-green-700 hover:bg-white hover:text-green-700 transition-colors duration-300 cursor-pointer"
           >

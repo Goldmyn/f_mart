@@ -22,7 +22,7 @@ const OrderList = ({ orders }) => {
         <tbody>
           {orders.map((item) => {
             return (
-              <tr className="text-gray-500 font-light border-b" key={item.id}>
+              <tr key={item.id} className="text-gray-500 font-light border-b">
                 <td className="py-2">
                   {moment(item.createdAt).format("MMMM Do YYYY, h:mm:ss a")}
                 </td>
@@ -34,7 +34,12 @@ const OrderList = ({ orders }) => {
                 </td>
                 <td>{item.user_cart_summary.totalCartItemsQty}</td>
                 <td>
-                  <Link to={`/admin/${item._id}`} className="border shadow-md shadow-green-50 border-green-800 px-2 rounded-md cursor-pointer font-semibold text-black hover:bg-green-800 hover:text-white transition-all duration-500">View</Link>
+                  <Link
+                    to={`/admin/${item._id}`}
+                    className="border shadow-md shadow-green-50 border-green-800 px-2 rounded-md cursor-pointer font-semibold text-black hover:bg-green-800 hover:text-white transition-all duration-500"
+                  >
+                    View
+                  </Link>
                 </td>
               </tr>
             );
@@ -47,6 +52,6 @@ const OrderList = ({ orders }) => {
 
 export default OrderList;
 
-OrderList.propType = {
+OrderList.propTypes = {
   orders: PropType.array,
 };
