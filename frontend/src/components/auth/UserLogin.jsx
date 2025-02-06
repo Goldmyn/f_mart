@@ -49,6 +49,8 @@ const UserLogin = () => {
       if (response.data.status === "success") {
         // update user in store from null to the response from database
         dispatch(updateUser(response.data.data));
+        console.log(response.data.data);
+        
         // redirect the user based on the userType property
         return response.data.data.userType === "admin"
           ? navigate("/admin")
