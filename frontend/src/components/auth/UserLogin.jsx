@@ -52,7 +52,7 @@ const UserLogin = () => {
         // redirect the user based on the userType property
         return response.data.data.userType === "admin"
           ? navigate("/admin")
-          : navigate("/profile");
+          : navigate("/marketplace");
       }
     } catch (error) {
       alert(error.response.data.message);
