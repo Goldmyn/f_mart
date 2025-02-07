@@ -9,14 +9,16 @@ const Navbar = () => {
   const { loginUser } = useSelector((state) => state.user);
   const navigate = useNavigate();
   const dispatch = useDispatch();
+console.log(loginUser);
+console.log(cartItems);
+
 
   function handleLogOut() {
     dispatch(updateUser(null));
     navigate("/login");
   }
-
   return (
-    <nav className="border-b border-green-200 sticky top-0 bg-white">
+    <nav className="border-b z-50 border-green-200 sticky top-0 bg-white">
       <section className="container mx-auto flex p-2 justify-between">
         <NavLink to={"/"}>
           <h2 className="text-2xl font-bold text-green-700 ">F.mart</h2>
