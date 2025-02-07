@@ -54,9 +54,8 @@ const ProfilePage = () => {
             }
             size={80}
             style={{ marginBottom: "15px", border: "5px solid #1890ff" }}
-          >
-            {loginUser?.name[0]}
-          </Avatar>
+          />
+
           <div>
             <Title level={3}>{loginUser?.name}</Title>
             <Text type="secondary">{loginUser?.email}</Text>

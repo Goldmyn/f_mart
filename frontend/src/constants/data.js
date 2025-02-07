@@ -34,7 +34,7 @@ export const PRODUCT_DATA = [
     product_name: "Fresh tomatoes (5 kg)",
     product_price: 7000,
     product_image:
-      "https://poundveg.co.uk/cdn/shop/files/VineTomatoBox5KgNew.jpg?v=1708947115",
+      "https://5.imimg.com/data5/NR/KY/MY-48969557/fresh-tomato-1000x1000.png",
     product_quantity: 1,
     product_description:
       "Our fresh tomatoes are handpicked from fertile farms to deliver vibrant red, juicy, and flavorful fruits. This 5 kg bundle is ideal for making rich soups, stews, and sauces. Packed with antioxidants, especially lycopene, these tomatoes help boost immunity and promote overall health. They are firm, ripe, and perfect for culinary use, ensuring your dishes are bursting with flavor and nutrients. Enjoy the farm-to-table freshness of these tomatoes in every meal.",
@@ -83,7 +83,7 @@ export const PRODUCT_DATA = [
     product_name: "Fresh vegetables (bundle)",
     product_price: 3000,
     product_image:
-      "https://jonnykproduce.ca/cdn/shop/files/Medium1.png?v=1732979772&width=1445",
+      "https://4.imimg.com/data4/AY/TE/IMOB-27708947/c__data_users_defapps_appdata_internetexplorer_temp_sav-1000x1000.jpg",
     product_quantity: 1,
     product_description:
       "This bundle of fresh vegetables includes spinach, pumpkin leaves, and other leafy greens, perfect for preparing soups, stews, or salads. Rich in iron, vitamins, and antioxidants, these vegetables are essential for a healthy and balanced diet. Harvested daily from local farms, they retain their vibrant green color and natural freshness. Add these nutrient-packed greens to your meals and enjoy the taste of wholesome farm produce.",
