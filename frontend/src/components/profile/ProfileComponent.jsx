@@ -48,7 +48,15 @@ const ProfilePage = () => {
       {/* Profile Card */}
       <Card bordered>
         <div className="flex items-center gap-4">
-          <Avatar size={80}>{loginUser?.name[0]}</Avatar>
+          <Avatar
+            src={
+              "https://img.freepik.com/free-psd/contact-icon-illustration-isolated_23-2151903337.jpg?t=st=1738886789~exp=1738890389~hmac=59355ec386501970937ae4466838c120771ce387a77272170bd30a0963df76bd&w=740"
+            }
+            size={80}
+            style={{ marginBottom: "15px", border: "5px solid #1890ff" }}
+          >
+            {loginUser?.name[0]}
+          </Avatar>
           <div>
             <Title level={3}>{loginUser?.name}</Title>
             <Text type="secondary">{loginUser?.email}</Text>
