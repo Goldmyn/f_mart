@@ -36,7 +36,7 @@ const UserRegister = () => {
       }) === false
     ) {
       return alert(
-        "Password must contain Uppercase, lowercase, number, symbol and minimum of 6 Characters"
+        "Password must contain Uppercase, lowercase, number, symbol and minimum of 6 Characters."
       );
     }
 

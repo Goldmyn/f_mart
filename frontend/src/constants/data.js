@@ -61,7 +61,7 @@ export const PRODUCT_DATA = [
   },
   {
     product_id: "7",
-    product_name: "Fresh plantains (1 dozen)",
+    product_name: "Fresh plantain (1 dozen)",
     product_price: 6000,
     product_image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPlymgJ5ve-k05WpSkYA0WxOWZSqy87b5gXEmIB2o3duXeCb8LP3EPOJQQthiKZ9UjcMw&usqp=CAU",
