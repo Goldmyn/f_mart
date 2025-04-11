@@ -33,7 +33,7 @@ const OrderDetails = () => {
     return (
       <div className="grid place-items-center py-24">
         <h1 className="text-3xl text-gray-500 tracking-wider animate-pulse ">
-          Getting Order Details....
+          Getting Order Details...
         </h1>
       </div>
     );
